@@ -1,0 +1,431 @@
+.wwxface {
+  // background: url('~assets/emoji.png');
+  background-repeat: no-repeat;
+}
+@for $i from 0 through 69{
+  .wwxface#{$i}{
+    background:url('../emoji/#{$i}.png');
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    // transform: rotateY(35 + ($i * 45deg)) translateZ(482.84px) ;
+  }
+}
+// .wwxface.wwxface0 {
+//   background-position: 0 0;
+// }
+
+// .wwxface.wwxface1 {
+//   background-position: -37px 0;
+// }
+
+// .wwxface.wwxface2 {
+//   background-position: -74px 0;
+// }
+
+// .wwxface.wwxface3 {
+//   background-position: -112px 0;
+// }
+
+// .wwxface.wwxface4 {
+//   background-position: -149px 0;
+// }
+
+// .wwxface.wwxface5 {
+//   background-position: -186px 0;
+// }
+
+// .wwxface.wwxface6 {
+//   background-position: -224px 0;
+// }
+
+// .wwxface.wwxface7 {
+//   background-position: -260px 0;
+// }
+
+// .wwxface.wwxface8 {
+//   background-position: -300px 0;
+// }
+
+// .wwxface.wwxface9 {
+//   background-position: -336px 0;
+// }
+
+// .wwxface.wwxface10 {
+//   background-position: -372px 0;
+// }
+
+// .wwxface.wwxface11 {
+//   background-position: -411px 0;
+// }
+
+// .wwxface.wwxface12 {
+//   background-position: -448px 0;
+// }
+
+// .wwxface.wwxface13 {
+//   background-position: -486px 0;
+// }
+
+// .wwxface.wwxface14 {
+//   background-position: -523px 0;
+// }
+
+// .wwxface.wwxface15 {
+//   background-position: 0 -37px;
+// }
+
+// .wwxface.wwxface16 {
+//   background-position: -37px -37px;
+// }
+
+// .wwxface.wwxface17 {
+//   background-position: -74px -37px;
+// }
+
+// .wwxface.wwxface18 {
+//   background-position: -111px -37px;
+// }
+
+// .wwxface.wwxface19 {
+//   background-position: -149px -37px;
+// }
+
+// .wwxface.wwxface20 {
+//   background-position: -186px -37px;
+// }
+
+// .wwxface.wwxface21 {
+//   background-position: -224px -37px;
+// }
+
+// .wwxface.wwxface22 {
+//   background-position: -260px -37px;
+// }
+
+// .wwxface.wwxface23 {
+//   background-position: -299px -37px;
+// }
+
+// .wwxface.wwxface24 {
+//   background-position: -336px -37px;
+// }
+
+// .wwxface.wwxface25 {
+//   background-position: -372px -37px;
+// }
+
+// .wwxface.wwxface26 {
+//   background-position: -408px -37px;
+// }
+
+// .wwxface.wwxface27 {
+//   background-position: -448px -37px;
+// }
+
+// .wwxface.wwxface28 {
+//   background-position: -485px -37px;
+// }
+
+// .wwxface.wwxface29 {
+//   background-position: -523px -37px;
+// }
+
+// .wwxface.wwxface30 {
+//   background-position: 0 -75px;
+// }
+
+// .wwxface.wwxface31 {
+//   background-position: -37px -75px;
+// }
+
+// .wwxface.wwxface32 {
+//   background-position: -74px -75px;
+// }
+
+// .wwxface.wwxface33 {
+//   background-position: -112px -75px;
+// }
+
+// .wwxface.wwxface34 {
+//   background-position: -148px -75px;
+// }
+
+// .wwxface.wwxface35 {
+//   background-position: -186px -75px;
+// }
+
+// .wwxface.wwxface36 {
+//   background-position: -223px -75px;
+// }
+
+// .wwxface.wwxface37 {
+//   background-position: -260px -75px;
+// }
+
+// .wwxface.wwxface38 {
+//   background-position: -299px -75px;
+// }
+
+// .wwxface.wwxface39 {
+//   background-position: -336px -75px;
+// }
+
+// .wwxface.wwxface40 {
+//   background-position: -374px -75px;
+// }
+
+// .wwxface.wwxface41 {
+//   background-position: -412px -75px;
+// }
+
+// .wwxface.wwxface42 {
+//   background-position: -448px -75px;
+// }
+
+// .wwxface.wwxface43 {
+//   background-position: -485px -75px;
+// }
+
+// .wwxface.wwxface44 {
+//   background-position: -522px -75px;
+// }
+
+// .wwxface.wwxface45 {
+//   background-position: 2px -113px;
+// }
+
+// .wwxface.wwxface46 {
+//   background-position: -37px -113px;
+// }
+
+// .wwxface.wwxface47 {
+//   background-position: -74px -113px;
+// }
+
+// .wwxface.wwxface48 {
+//   background-position: -112px -113px;
+// }
+
+// .wwxface.wwxface49 {
+//   background-position: -148px -113px;
+// }
+
+// .wwxface.wwxface50 {
+//   background-position: -186px -113px;
+// }
+
+// .wwxface.wwxface51 {
+//   background-position: -223px -113px;
+// }
+
+// .wwxface.wwxface52 {
+//   background-position: -259px -113px;
+// }
+
+// .wwxface.wwxface53 {
+//   background-position: -299px -113px;
+// }
+
+// .wwxface.wwxface54 {
+//   background-position: -336px -113px;
+// }
+
+// .wwxface.wwxface55 {
+//   background-position: -374px -113px;
+// }
+
+// .wwxface.wwxface56 {
+//   background-position: -410px -113px;
+// }
+
+// .wwxface.wwxface57 {
+//   background-position: -448px -113px;
+// }
+
+// .wwxface.wwxface58 {
+//   background-position: -484px -113px;
+// }
+
+// .wwxface.wwxface59 {
+//   background-position: -523px -113px;
+// }
+
+// .wwxface.wwxface60 {
+//   background-position: 2px -150px;
+// }
+
+// .wwxface.wwxface61 {
+//   background-position: -36px -150px;
+// }
+
+// .wwxface.wwxface62 {
+//   background-position: -74px -150px;
+// }
+
+// .wwxface.wwxface63 {
+//   background-position: -112px -150px;
+// }
+
+// .wwxface.wwxface64 {
+//   background-position: -148px -150px;
+// }
+
+// .wwxface.wwxface65 {
+//   background-position: -186px -150px;
+// }
+
+// .wwxface.wwxface66 {
+//   background-position: -223px -150px;
+// }
+
+// .wwxface.wwxface67 {
+//   background-position: -260px -150px;
+// }
+
+// .wwxface.wwxface68 {
+//   background-position: -298px -150px;
+// }
+
+// .wwxface.wwxface69 {
+//   background-position: -336px -150px;
+// }
+
+// .wwxface.wwxface70 {
+//   background-position: -372px -150px;
+// }
+
+// .wwxface.wwxface71 {
+//   background-position: -411px -150px;
+// }
+
+// .wwxface.wwxface72 {
+//   background-position: -448px -150px;
+// }
+
+// .wwxface.wwxface73 {
+//   background-position: -485px -150px;
+// }
+
+// .wwxface.wwxface74 {
+//   background-position: -523px -150px;
+// }
+
+// .wwxface.wwxface75 {
+//   background-position: 2px -187px;
+// }
+
+// .wwxface.wwxface76 {
+//   background-position: -36px -187px;
+// }
+
+// .wwxface.wwxface77 {
+//   background-position: -73px -187px;
+// }
+
+// .wwxface.wwxface78 {
+//   background-position: -110px -187px;
+// }
+
+// .wwxface.wwxface79 {
+//   background-position: -148px -187px;
+// }
+
+// .wwxface.wwxface80 {
+//   background-position: -185px -187px;
+// }
+
+// .wwxface.wwxface81 {
+//   background-position: -224px -187px;
+// }
+
+// .wwxface.wwxface82 {
+//   background-position: -260px -187px;
+// }
+
+// .wwxface.wwxface83 {
+//   background-position: -298px -187px;
+// }
+
+// .wwxface.wwxface84 {
+//   background-position: -336px -187px;
+// }
+
+// .wwxface.wwxface85 {
+//   background-position: -372px -187px;
+// }
+
+// .wwxface.wwxface86 {
+//   background-position: -411px -187px;
+// }
+
+// .wwxface.wwxface87 {
+//   background-position: -448px -187px;
+// }
+
+// .wwxface.wwxface88 {
+//   background-position: -484px -187px;
+// }
+
+// .wwxface.wwxface89 {
+//   background-position: -523px -225px;
+// }
+
+// .wwxface.wwxface90 {
+//   background-position: 3px -225px;
+// }
+
+// .wwxface.wwxface91 {
+//   background-position: -36px -225px;
+// }
+
+// .wwxface.wwxface92 {
+//   background-position: -73px -225px;
+// }
+
+// .wwxface.wwxface93 {
+//   background-position: -112px -225px;
+// }
+
+// .wwxface.wwxface94 {
+//   background-position: -148px -225px;
+// }
+
+// .wwxface.wwxface95 {
+//   background-position: -185px -225px;
+// }
+
+// .wwxface.wwxface96 {
+//   background-position: -223px -225px;
+// }
+
+// .wwxface.wwxface97 {
+//   background-position: -260px -225px;
+// }
+
+// .wwxface.wwxface98 {
+//   background-position: -298px -225px;
+// }
+
+// .wwxface.wwxface99 {
+//   background-position: -336px -225px;
+// }
+
+// .wwxface.wwxface100 {
+//   background-position: -373px -225px;
+// }
+
+// .wwxface.wwxface101 {
+//   background-position: -410px -225px;
+// }
+
+// .wwxface.wwxface102 {
+//   background-position: -448px -225px;
+// }
+
+// .wwxface.wwxface103 {
+//   background-position: -485px -225px;
+// }
+
+// .wwxface.wwxface104 {
+//   background-position: -522px -225px;
+// }
