@@ -8,18 +8,19 @@ const iconUrl = isDev
   : path.join(__dirname, "logo.png");
 
 export function trayInit(win: BrowserWindow) {
+  const _jump = jump(win);
   tray = new Tray(nativeImage.createFromPath(iconUrl));
   const contextMenu = Menu.buildFromTemplate([
     {
       label: "列表",
       click: () => {
-        jump(win, "/list");
+        _jump("/list");
       },
     },
     {
       label: "登录",
       click: () => {
-        jump(win, "/");
+        _jump("/");
       },
     },
     {
@@ -36,10 +37,12 @@ export function trayInit(win: BrowserWindow) {
   tray.setContextMenu(contextMenu);
 }
 
-function jump(win: BrowserWindow, name: string) {
-  if (!win) return;
-  win.show();
-  win.webContents.executeJavaScript(
-    `history.pushState({},"","${name}");dispatchEvent(new Event("popstate"))`
-  );
+function jump(win: BrowserWindow) {
+  return (name: string) => {
+    if (!win) return;
+    win.show();
+    win.webContents.executeJavaScript(
+      `history.pushState({},"","${name}");dispatchEvent(new Event("popstate"))`
+    );
+  };
 }
