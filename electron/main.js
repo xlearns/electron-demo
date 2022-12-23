@@ -1,8 +1,10 @@
-// main.js
+// electron/main.js
 
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
+
+const NODE_ENV = process.env.NODE_ENV;
 
 function createWindow() {
   // 创建浏览器窗口
@@ -15,6 +17,7 @@ function createWindow() {
   });
 
   // 加载 index.html
+  // mainWindow.loadFile('dist/index.html') 将该行改为下面这一行，加载url
   mainWindow.loadURL(
     NODE_ENV === "development"
       ? "http://localhost:5173"
@@ -22,7 +25,9 @@ function createWindow() {
   );
 
   // 打开开发工具
-  // mainWindow.webContents.openDevTools()
+  if (NODE_ENV === "development") {
+    mainWindow.webContents.openDevTools({ mode: "undocked" });
+  }
 }
 
 // 这段程序将会在 Electron 结束初始化
