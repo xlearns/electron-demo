@@ -1,0 +1,32 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+#app{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.drag{
+  -webkit-app-region: drag;
+}
+
+.no-drag{
+  -webkit-app-region: no-drag;
+}
+
+.h-full{
+  height:100%
+}
+
+.header{
+  height:60px;
+  background:#333;
+  color:#fff
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
