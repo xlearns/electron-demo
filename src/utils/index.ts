@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import path from "path";
 import elog from "electron-log";
 import fs from "fs-extra";

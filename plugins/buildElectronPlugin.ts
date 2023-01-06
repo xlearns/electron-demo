@@ -1,4 +1,4 @@
-//plugins\buildlugin.ts
+//@ts-nocheck
 const path = require("path");
 const fs = require("fs");
 
@@ -11,7 +11,7 @@ class BuildObj {
 			platform: "node",
 			minify: true,
 			outfile: "./dist/mainEntry.js",
-			external: ["electron"],
+			external: ["electron", "ffi-napi"],
 		});
 	}
 	//为生产环境准备package.json

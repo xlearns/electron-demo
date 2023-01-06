@@ -1,7 +1,12 @@
+//@ts-nocheck
 import { app, BrowserWindow, dialog, ipcMain, Notification } from "electron";
 import { isDev, getUploadFiles } from "../utils";
 import { CustomScheme } from "./customScheme";
 import { trayInit } from "./tray";
+import ffi from "ffi-napi";
+const dllUrl = isDev
+	? PathUtils.resolvePath("statc/PocUserDll.dll")
+	: PathUtils.resolvePath("PocUserDll.dll");
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 let mainWindow: BrowserWindow;
@@ -72,3 +77,19 @@ ipcMain.on("msg", (e, msg, title = "通知") => {
 	});
 	notification.show();
 });
+
+ipcMain.on("dll", (e) => {
+	let Dll = new ffi.Library(dllUrl, {
+		PocUserInitCommPort: ["int", ["int"]],
+		PocUserSendMessage: ["void", ["int", "int", "int"]],
+	});
+	const { PocUserInitCommPort } = Dll;
+	msg(String(PocUserInitCommPort(0)));
+});
+
+function msg(msg: string) {
+	dialog.showMessageBox({
+		title: "ok",
+		message: msg,
+	});
+}
