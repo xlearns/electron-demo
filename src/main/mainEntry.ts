@@ -1,12 +1,12 @@
 //@ts-nocheck
 import { app, BrowserWindow, dialog, ipcMain, Notification } from "electron";
-import { isDev, getUploadFiles } from "../utils";
+import { isDev, getUploadFiles, PathUtils } from "../utils";
 import { CustomScheme } from "./customScheme";
 import { trayInit } from "./tray";
 import ffi from "ffi-napi";
 const dllUrl = isDev
-	? PathUtils.resolvePath("statc/PocUserDll.dll")
-	: PathUtils.resolvePath("PocUserDll.dll");
+	? PathUtils.resolvePath("statc/test.dll")
+	: PathUtils.resolvePath("test.dll");
 
 process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = "true";
 let mainWindow: BrowserWindow;
