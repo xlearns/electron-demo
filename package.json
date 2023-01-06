@@ -13,7 +13,7 @@
     "@types/qs": "^6.9.7",
     "@vitejs/plugin-vue": "^4.0.0",
     "axios": "^1.2.1",
-    "electron": "^22.0.0",
+    "electron": "20.0.0",
     "electron-builder": "^23.6.0",
     "electron-log": "^4.4.8",
     "element-plus": "^2.2.19",
